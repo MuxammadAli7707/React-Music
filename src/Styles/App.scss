@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin-left: 20rem;
+}
+h1, h2, h3 {
+  color: rgb(54, 54, 54);
+}
+@import './Songs';
+@import './Player';
+@import './library'
