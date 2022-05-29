@@ -14,3 +14,17 @@
 h2 {
   padding: 3rem 1rem 1rem 1rem;
 }
+
+
+.imgAnim  {
+  animation: animimg infinite 40s linear;
+}
+@keyframes animimg {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

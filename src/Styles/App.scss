@@ -5,10 +5,14 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
-
-.container {
-  margin-left: 20rem;
+body {
+  background-color: #F8F8F8;
 }
+
+.App {
+  min-height: 100vh;
+}
+
 h1, h2, h3 {
   color: rgb(54, 54, 54);
 }
@@ -25,5 +29,30 @@ h1, h2, h3 {
 }
 @import './Songs';
 @import './Player';
-@import './library'
+@import './library';
+@import './Nav';
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+  }
+  .play-control {
+    width: 60%;
+  }
+
+  .song-container {
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .song-container {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
 

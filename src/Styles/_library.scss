@@ -7,9 +7,20 @@
   background-color: lightcyan;
   box-shadow: 2px 2px 50px rgb(214, 207, 207);
   overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
   h2 {
     padding: 2rem;
   }
+}
+.container {
+  transition: all 0.5 ease;
+  margin-left: 0rem;
+}
+.ml {
+  margin-left: 15rem;
+  transition: all 0.5 ease;
 }
 .library-song {
   display: flex;
@@ -18,6 +29,7 @@
   cursor: pointer;
   img {
     width: 40%;
+    border-radius: 10px;
   }
 
   &:hover {
@@ -29,9 +41,20 @@
   padding-left: 1rem;
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
   }
   h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
+}
+
+.selected {
+  background-color: rgb(171, 207, 238);
+}
+
+.active-library {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.5s ease;
 }
