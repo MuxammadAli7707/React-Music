@@ -50,6 +50,7 @@ function App() {
           />
      </div>
         <Library 
+          currentSong={currentSong}
           isPlaying={isPlaying}
           audioRef={audioRef} 
           songs={songs} 
